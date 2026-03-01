@@ -4,7 +4,7 @@
   };
 
   environment.systemPackages = with pkgs; [
-    wayfire
+    river-classic
     xwayland
     magnetic-catppuccin-gtk
     brightnessctl

@@ -24,7 +24,7 @@
   nix.gc.options = "--delete-older-than 3d";
 
   nix.optimise.automatic = true;
-  nix.optimise.dates = [ "weekly" ];
+  nix.optimise.dates = [ "dayly" ];
 
 }
 

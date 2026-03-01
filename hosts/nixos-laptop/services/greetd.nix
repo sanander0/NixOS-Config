@@ -5,7 +5,7 @@
     enable = true;
     settings = {
       default_session = {
-        command = "wayfire";
+        command = "river";
         user = "sanander";
       };
     };

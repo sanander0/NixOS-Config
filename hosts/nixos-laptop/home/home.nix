@@ -4,7 +4,6 @@
   home.stateVersion = "25.05";
 
   imports = [
-    ./modules/wayfire.nix
     ./modules/river.nix
     ./modules/alacritty.nix
     ./modules/waybar.nix
