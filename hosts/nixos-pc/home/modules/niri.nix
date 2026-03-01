@@ -83,7 +83,7 @@ prefer-no-csd
 //autorun
 spawn-at-startup "/usr/libexec/polkit-mate-authentication-agent-1"
 spawn-at-startup "swww-daemon"
-spawn-at-startup "swww" "img" "/home/sanander/Pictures/Wallpaper/wallhaven-p9pd23.png"
+spawn-at-startup "swww" "img" "~/Pictures/Wallpaper/wallhaven-p9pd23.png"
 
 hotkey-overlay {
     skip-at-startup

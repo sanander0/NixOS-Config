@@ -12,7 +12,6 @@
     firefox
     alacritty
     telegram-desktop
-    discord
     obsidian
     
 

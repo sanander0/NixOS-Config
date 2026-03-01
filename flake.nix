@@ -16,6 +16,7 @@
     commonModules = [
       ./user.nix
       ./packages.nix
+      ./hardware-configuration.nix
 
       ./configuration.nix
       ./services/pipewire.nix
@@ -35,7 +36,6 @@
         modules = commonModules ++ [
           ./nixos/KernelMod.nix
 
-          ./hosts/nixos-pc/hardware-configuration.nix
           ./hosts/nixos-pc/nixos-pc.nix
           ./hosts/nixos-pc/packages-pc.nix
 
@@ -57,7 +57,6 @@
         specialArgs = { inherit inputs; };
 
         modules = commonModules ++ [
-          ./hosts/nixos-laptop/hardware-configuration.nix
           ./hosts/nixos-laptop/nixos-laptop.nix
           ./hosts/nixos-laptop/packages-laptop.nix
 
