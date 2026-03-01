@@ -1,3 +1,3 @@
 { pkgs, ... }: {
-
+  boot.kernelModules = [ "tun" ];
 }

@@ -2,8 +2,7 @@
   nixpkgs.config = {
     allowUnfree = true;
   };
-
-  programs.niri.enable = true;
+  programs.waybar.enable = true;
   programs.steam.enable = true;
   programs.virt-manager.enable = true;
   virtualisation.libvirtd.enable = true;
@@ -14,6 +13,7 @@
     alacritty
     telegram-desktop
     discord
+    obsidian
     
 
     # CLI utils
@@ -30,18 +30,20 @@
     pavucontrol
     nwg-look
     droidcam
+    transmission_4-gtk
+    mpv
+    imv
+    localsend
 
     # WMs stuff
-    waybar
+    mako
     wofi
     swww
-    mako
-
 
     # Other
+    wl-clipboard
     home-manager
-    xwayland-satellite
-    gruvbox-gtk-theme
+    adwaita-icon-theme
   ];
 
   fonts.packages = with pkgs; [
