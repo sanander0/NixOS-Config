@@ -17,14 +17,15 @@
       ./user.nix
       ./packages.nix
       ./hardware-configuration.nix
-
       ./configuration.nix
+
       ./services/pipewire.nix
       ./services/V2rayA.nix
       ./services/ssh.nix
       ./services/firewall.nix
       ./services/network.nix
       ./services/flash.nix
+      ./services/polkit.nix
 
     ];
   in {
@@ -62,6 +63,7 @@
 
           ./hosts/nixos-laptop/services/greetd.nix
           ./hosts/nixos-laptop/services/libinput.nix
+          ./hosts/nixos-laptop/services/xdg.nix
 
           ./hosts/nixos-laptop/scripts/wallpaper.nix
 

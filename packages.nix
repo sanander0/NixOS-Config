@@ -13,7 +13,8 @@
     alacritty
     telegram-desktop
     obsidian
-    
+    obs-studio
+    discord
 
     # CLI utils
     fastfetch
@@ -28,14 +29,12 @@
     nemo
     pavucontrol
     nwg-look
-    droidcam
     transmission_4-gtk
     mpv
     imv
     localsend
 
     # WMs stuff
-    mako
     wofi
     swww
 

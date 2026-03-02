@@ -3,6 +3,6 @@
 {
   users.users.sanander = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "libvirtd" ];
+    extraGroups = [ "wheel" "libvirtd" "networkmanager" ];
   };
 }

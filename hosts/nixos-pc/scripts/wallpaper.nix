@@ -6,7 +6,7 @@
   ];
 
   system.activationScripts.downloadWallpaper.text = ''
-    WALLDIR="/home/sanander/Pictures/Wallpaper"
+    WALLDIR="/home/sanander/Wallpaper"
     FILE="$WALLDIR/wallhaven-p9pd23.png"
 
     mkdir -p "$WALLDIR"

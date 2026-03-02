@@ -20,7 +20,6 @@ content_halign=fill
 window {
   background-color: #1e1e2e;          /* mocha base — основной фон окна */
   border: 2px solid #cba6f7;          /* mauve — акцентный бордер */
-  border-radius: 0.75rem;
 }
 
 * {

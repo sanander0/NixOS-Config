@@ -7,6 +7,7 @@
 
   environment.systemPackages = with pkgs; [
     # Other
+    mako
     xwayland-satellite
     gruvbox-gtk-theme
   ];

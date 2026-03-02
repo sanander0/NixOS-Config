@@ -20,9 +20,6 @@ rivertile &
 #Waybar
 waybar &
 
-#Mako
-mako &
-
 #Демон обоев
 swww-daemon &
 
@@ -52,7 +49,7 @@ riverctl input pointer-1267-13075-ASCE1205:00_04F3:3313_Touchpad drag enabled
 wlr-randr --output eDP-1 --scale 1.2
 
 #Обои
-swww img /home/sanander/Pictures/Wallpaper/wallhaven-x6x3gz.png &
+swww img ~/Wallpaper/wallhaven-x6x3gz.png &
 
 # Цвет рамки активного окна
 riverctl border-color-focused 0xabbcda 
@@ -123,7 +120,7 @@ riverctl map -layout 0 normal Super M  exit
 riverctl map -layout 0 normal Super W spawn "pgrep -x wofi && pkill wofi || wofi --show drun -I"
 
 #Бинд скриншот
-riverctl map -layout 0 normal  None Print spawn 'grim -g "$(slurp)" - | tee ~/Screenshots/$(date +"%Y-%m-%d-%H%M%S").png | wl-copy && notify-send "Скриншот сохранён и в буфере"'
+riverctl map -layout 0 normal  None Print spawn 'grim -g "$(slurp)" - | tee ~/Pictures/Screenshots/$(date +"%Y-%m-%d-%H%M%S").png | wl-copy && notify-send "Скриншот сохранён и в буфере"'
 
 #Бинд colorpicker
 riverctl map normal None F12 spawn "~/Scripts/colorpicker"
@@ -166,6 +163,12 @@ riverctl rule-add -app-id "org.gnome.FileRoller" -title "Extract" float
 riverctl rule-add -app-id "imv" float
 riverctl rule-add -app-id "imv" position center
 riverctl rule-add -app-id "imv" dimensions 1000 800
+
+#----Переменные окружения----
+
+systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP XDG_SESSION_TYPE
+dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP XDG_SESSION_TYPE
+systemctl --user restart xdg-desktop-portal xdg-desktop-portal-wlr
   '';
   executable = true;
 };
