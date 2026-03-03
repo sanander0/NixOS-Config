@@ -4,7 +4,7 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
-    home-manager.url = "github:nix-community/home-manager/release-25.05";
+    home-manager.url = "github:nix-community/home-manager/master";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
 
@@ -18,6 +18,7 @@
       ./packages.nix
       ./hardware-configuration.nix
       ./configuration.nix
+      ./environment.nix
 
       ./services/pipewire.nix
       ./services/V2rayA.nix

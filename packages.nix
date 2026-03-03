@@ -7,20 +7,20 @@
   programs.virt-manager.enable = true;
   virtualisation.libvirtd.enable = true;
 
+
   environment.systemPackages = with pkgs; [
     # Desktop apps
     firefox
     alacritty
     telegram-desktop
     obsidian
-    obs-studio
     discord
 
     # CLI utils
     fastfetch
     neovim
-    git
     btop
+    git
     cmus
     cava
     yt-dlp
@@ -45,7 +45,7 @@
   ];
 
   fonts.packages = with pkgs; [
-    #jetbrains-mono
+    jetbrains-mono
     noto-fonts
     twemoji-color-font
     font-awesome
