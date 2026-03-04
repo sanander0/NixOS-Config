@@ -65,6 +65,7 @@
           ./hosts/nixos-laptop/services/greetd.nix
           ./hosts/nixos-laptop/services/libinput.nix
           ./hosts/nixos-laptop/services/xdg.nix
+          ./hosts/nixos-laptop/services/power.nix
 
           ./hosts/nixos-laptop/scripts/wallpaper.nix
 
